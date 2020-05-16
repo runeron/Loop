@@ -8,6 +8,7 @@ jobs:
   build:
     runs-on: [macos-latest]
     env:
+      DEVELOPMENT_TEAM: ${{ 'GUB7W8744C' }}
       XC_VERSION: ${{ '11.4.1' }}
       XC_PROJECT: ${{ 'Loop.xcodeproj' }}
       XC_WORKSPACE: ${{ 'project.xcworkspace' }}
