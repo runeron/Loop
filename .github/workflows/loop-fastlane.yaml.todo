@@ -1,0 +1,18 @@
+---
+name: Build Application
+on:
+  push:
+    branches: [master]
+  merge:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: [macos-latest]
+    env:
+      XC_VERSION: ${{ '11.4' }}
+      XC_WORKSPACE: ${{ 'MyApp.xcworkspace' }}
+      XC_SCHEME: ${{ 'MyApp' }}
+
+    steps:
+      - uses: actions/checkout@v2
