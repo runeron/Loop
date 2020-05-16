@@ -20,8 +20,8 @@ jobs:
 
       - uses: actions/checkout@v2
 
-      - name: List Schemes
-        run: /usr/bin/xcodebuild -list -project "$XC_PROJECT"
+#      - name: List Schemes
+#        run: /usr/bin/xcodebuild -list -project "$XC_PROJECT"
 
       - name: Build
         run: |
