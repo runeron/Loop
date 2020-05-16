@@ -24,4 +24,9 @@ jobs:
         run: /usr/bin/xcodebuild -list -project "$XC_PROJECT"
 
       - name: Build
-        run: xcodebuild -project "$XC_PROJECT" -scheme "$XC_SCHEME" build
+        run: |
+          xcodebuild clean test \
+          -project "$XC_PROJECT" \
+          -scheme "$XC_SCHEME" \
+          CODE_SIGN_IDENTITY="" \
+          CODE_SIGNING_REQUIRED=NO
