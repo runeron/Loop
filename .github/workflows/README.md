@@ -31,3 +31,33 @@ openssl pkcs12 -export -out ios_distribution.p12 -inkey ios_distribution.key -in
 ```
 
 * Update provisioning profiles with the new cert, and download from dev portal.
+
+## Info
+
+Targets:
+    Loop
+    Loop Status Extension
+    WatchApp
+    WatchApp Extension
+    Learn
+    LoopCore
+    LoopCore-watchOS
+    LoopUI
+    DoseMathTests
+    LoopTests
+    Cartfile
+
+Build Configurations:
+    Debug
+    Release
+
+Schemes:
+    Cartfile
+    Complication - WatchApp
+    DoseMathTests
+    Learn
+    Loop
+    Loop Status Extension
+    LoopTests
+    Notification - WatchApp
+    WatchApp

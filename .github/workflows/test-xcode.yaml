@@ -21,3 +21,6 @@ jobs:
 
       - name: List Schemes
         run: /usr/bin/xcodebuild -list -project "$XC_PROJECT"
+
+      - name: Build
+        run: xcodebuild -project "$XC_PROJECT" -scheme "$XC_SCHEME" build
